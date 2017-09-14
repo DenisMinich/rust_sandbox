@@ -1,0 +1,6 @@
+[package]
+name = "biplanes"
+version = "0.1.0"
+authors = ["Denis Minich <denis.minich.fitr@gmail.com>"]
+
+[dependencies]
