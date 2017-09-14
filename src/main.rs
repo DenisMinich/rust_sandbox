@@ -4,10 +4,10 @@ use biplanes::plane::*;
 use std::f64::consts::*;
 
 fn main() {
-    let mut p: Plane = Plane {
-        position: Position { x: 1, y: -2 },
-        velocity: Velocity { value: 10., angle: FRAC_PI_4 },
-    };
+    let mut p: Plane = PlaneBuilder::new().
+        position(2, 4).
+        velocity(0., PI).
+        build();
     println!("Plane before: {:?}", p);
     p.traverse();
     println!("Plane after: {:?}", p);
